@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsf1ktpdrxoq5"]
+
+[ext_resource type="Texture2D" uid="uid://bp30e5a1jq7g2" path="res://Pictures/sprite2.png" id="1_m42ig"]
+[ext_resource type="PackedScene" uid="uid://cp1bsll6k2t5p" path="res://Banana.tscn" id="2_dyivq"]
+
+[node name="Main Scene" type="Node2D"]
+
+[node name="Avocado1" type="Sprite2D" parent="."]
+modulate = Color(1, 0.929412, 0.14902, 1)
+position = Vector2(155, 170)
+scale = Vector2(0.084375, 0.130568)
+texture = ExtResource("1_m42ig")
+
+[node name="Avocado2" type="Sprite2D" parent="."]
+modulate = Color(1, 0.929412, 0.14902, 1)
+position = Vector2(639, 193)
+scale = Vector2(0.126042, 0.167924)
+texture = ExtResource("1_m42ig")
+
+[node name="Bunches of Bananas" type="Node2D" parent="."]
+modulate = Color(0.737255, 1, 1, 1)
+position = Vector2(275, 641)
+
+[node name="Banana" parent="Bunches of Bananas" instance=ExtResource("2_dyivq")]
+position = Vector2(108, -112)
+
+[node name="Banana2" parent="Bunches of Bananas" instance=ExtResource("2_dyivq")]
+position = Vector2(316, -138)
+
+[node name="Banana3" parent="Bunches of Bananas" instance=ExtResource("2_dyivq")]
+position = Vector2(-126, -78)
+
+[node name="Lonely Banana" parent="." instance=ExtResource("2_dyivq")]
+position = Vector2(1020, 630)

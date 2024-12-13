@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cp1bsll6k2t5p"]
+
+[ext_resource type="Texture2D" uid="uid://dndmvwdu0oyii" path="res://Pictures/sprite.png" id="1_4mbpr"]
+
+[node name="Banana" type="Node2D"]
+
+[node name="Banana Sprite" type="Sprite2D" parent="."]
+position = Vector2(-19.5, -94.2591)
+scale = Vector2(0.0583742, 0.0757927)
+texture = ExtResource("1_4mbpr")
